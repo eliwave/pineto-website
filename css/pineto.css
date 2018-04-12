@@ -1,0 +1,253 @@
+*{box-sizing: border-box;}
+
+
+
+body{
+  font-family: 'Pangolin', cursive;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1.3em;
+}
+
+header{
+	width: 100vw; /* The difference between using width: 100vw instead of width: 100% is that while 100% will make the element fit all the space available, the viewport width has a specific measure, in this case the width of the available screen, including the document margin.*/
+	height: 100vh;
+	background-image: url(../img/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: block;
+	background-repeat: no-repeat;
+  
+}
+
+a {
+  color: white;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav{
+  width: 100%;
+  /*padding: 0 20px;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #354635;
+}
+
+#nav.black{
+  background: black;
+}
+
+.logo{
+	position: relative;
+	float: left;
+  margin-left: 18px;
+}
+
+.navbar_menu{
+  position: relative;
+  float: right;
+}
+
+.navbar_menu li{
+  padding: 10px 15px;
+  font-weight: lighter;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.navbar_menu li:before,
+.navbar_menu li:after{
+  position: absolute;
+  transition: all 0.4s ease;
+  bottom: 0;
+  left: -100%;
+  width: 50%;
+  height: 1px;
+  background: white;
+  content: '';
+  z-index: -1;
+}
+
+
+ul{
+  list-style-type: none;
+  padding: 5px;
+}
+
+li{
+  display: inline-block;
+}
+
+.header_left{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  padding: 0.8em;
+  color: white;
+}
+.header_right{
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: white;
+  text-align: center;
+}
+
+h1{
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: #E3FDE1;
+  text-shadow: 3px 7px 3px black;
+}
+
+
+
+.header_left p{
+  font-size: 0.6rem;
+  color: white;
+}
+
+button{
+    background: #28787d;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 3px 7px 6px black;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  flex-direction: row;
+  background: #28787d;
+  text-align: center;
+}
+
+
+.col-4_img{
+  border-radius: 30px;
+  box-shadow: 
+}
+
+.sec{
+    text-align: center;
+    background: white;
+}
+
+.thr{
+  background: #354635;
+  color: white;
+  text-align: left;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-4 img {
+  width: 90%;
+  box-shadow: 3px 2px 3px grey;
+}
+
+.col-12{
+  width: 100%;
+  padding: 1.3em;
+}
+div.col-12 fri{
+  color: white;
+  font-size: 1.4em;
+}
+
+.col-3{
+  width: 25%;
+  padding: 2em;
+}
+
+.col-3 h3{
+  color: var(--secondary-color);
+}
+
+.col-3 img{
+  width: 90px;
+  height: 90px;
+}
+.col-6{
+  width: 50%;
+  padding: 2% 5% 0 5%;
+
+}
+div.col-6 fri{
+  font-size: 2em;
+}
+
+
+footer .col-6{
+  width: 50%;
+  padding: 2%;
+}
+
+footer .col-3 {
+  width: 35%;
+  font-size: 0.9em;
+}
+
+h4{
+margin-top: 8%;
+}
+
+
+.vvv{
+	width: 100vw; /* The difference between using width: 100vw instead of width: 100% is that while 100% will make the element fit all the space available, the viewport width has a specific measure, in this case the width of the available screen, including the document margin.*/
+	height: 100vh;
+	background-image: url(../img/background1.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: block;
+	background-repeat: no-repeat;
+  color: white;
+}
+.fri{
+  color: white;
+  font-size: 1.3em;
+    padding: 0 10% 0 10%;
+}
+
+.col-12.pr{
+margin-bottom: -2%;
+
+}
+
+.header_left:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.header_left{
+    -webkit-transition: -webkit-transform 2s,opacity 2s,width 2s;
+        transition-property: -webkit-transform, opacity, width;
+        transition-duration: 5s;
+    -o-transition-property: width,-o-transform,background,opacity;
+    -o-transition-duration: 4s;
+    -moz-transition-property: width,-o-transform,background,opacity;
+    -moz-transition-duration: 5s;
+    transition-property: width,transform,opacity;
+    transition-duration: 5s;
+    opacity: 0.6;
+}
